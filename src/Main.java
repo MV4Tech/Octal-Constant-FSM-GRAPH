@@ -4,9 +4,9 @@ public class Main {
 	public static void main(String[] Args) throws InterruptedException {
 
 		System.out.println("\n");
-		System.out.print("Регекс за осмична константа: ");
-		System.out.println("R = 0[0-7]+ или 0D8+");
-		System.out.print("Граф на преходите на краен автомат за осмична система: ");
+		System.out.print("Octal Constant: ");
+		System.out.println("R = 0[0-7]+ or 0D8+");
+		System.out.print("Finite State Machine Transition Graph: ");
 		System.out.println("q0-> 0 q1-> D8 q2-> D8... qn-># qf");
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Main {
 
 	public static String finite_state_machine_transition_graph(String number) throws InterruptedException {
 
-		System.out.println("\nГраф на преходите на краен автомат за осмична система за числото : " + number);
+		System.out.println("\n FSM on number : " + number);
 		char[] digit = number.toCharArray();
 		String sequence = "";
 		int n = 0;
